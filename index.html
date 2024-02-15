@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather 7 Day</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="./photo/weather-appicone.png" type="image/x-icon">
+</head>
+<body onload="initMap()">
+    <video src="./vidio/cloude bokein.mp4" width="100%" height="50%" id="vidio"  type="video/mp4" autoplay loop muted>
+ 
+    </video>
+
+    <div class="card">
+        <div class="search">
+            <input type="search" name="" id="serchcity" value="" placeholder=" enter City name">
+            <button id="serch">Search</button>
+            <button id="locateUser">Locate </button>
+        </div>
+
+
+        <div class="weather">
+          <div class="im">
+<img src="./photo/cloudyovercast.png" alt="" class="iconerainy">
+<div class=".tes">
+<h2 class="city"></h2>
+<h2 class="temp"></h2>
+
+</div>
+</div>
+<div class="details">
+    <div class="col">
+        <img src="./photo/humidity.png" alt="" class="humidityicne">
+        <div>
+<p class="humidity"></p>
+<span>humidity</span>
+
+</div>
+
+
+</div>
+<div class="col">
+<img src="./photo/wind.png" alt="" class="windicone">
+
+<div>
+<p class="wind"></p>
+<span>Wind Speed</span>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+        <div class="weatherdays">
+<!----------------Tabel---------------------->
+          <table>
+ 
+          <tr class="namedays">
+          
+            </tr>
+
+
+              <tr class="whterid">
+
+
+              </tr>
+
+
+            
+          </table>
+
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="./main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEz6EuBwN3abHp3s5ZImFO8TQfQuHWQc&callback=initMap"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEz6EuBwN3abHp3s5ZImFO8TQfQuHWQc&libraries=places&callback=initMap"></script>
+
+
+</body>
+</html>
