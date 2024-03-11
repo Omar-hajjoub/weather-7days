@@ -163,6 +163,7 @@ const weatherApp = new WeatherApp('ad3711942890a60c13633e5a8f592eac');
 
 // Event listener for the search button
 document.getElementById('serch').addEventListener('click', async () => {
+  console.log('hello')
   const city = weatherApp.serchcityInput.value.replace(/\d/g,'');
   const { currentWeatherData, forecastData } = await weatherApp.getWeatherData(city);
   weatherApp.updateWeatherUI(currentWeatherData, forecastData);
